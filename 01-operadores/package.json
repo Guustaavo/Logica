@@ -1,0 +1,15 @@
+{
+  "name": "cyber-gustavo",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "loogica.js", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Gustavo's scripts.",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
