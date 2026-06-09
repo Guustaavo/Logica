@@ -7,13 +7,13 @@ var chute;
 var tentativas = 0;
 
 do {
-    chute = leia.questionInt("Digite um numero entre 0 e 1000: ");
+    chute = leia.questionInt("Type a number between 0 and 1000: ");
     tentativas++;
 
     if (chute > numero) {
-        console.log("O numero é menor!");
+        console.log("The number is smaller!");
     } else if (chute < numero) {
-        console.log("O numero é maior!");
+        console.log("The number is bigger!");
     }
 
 } while (chute !== numero);

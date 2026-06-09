@@ -2,8 +2,8 @@ import leia from 'readline-sync';
 
 var idade, meses, dias
 
-idade = leia.questionInt("Type your age: ")
+idade = leia.questionInt("TYPE YOUR AGE: ")
 meses = idade * 12
 dias = idade * 365
 
-console.log("Você tem " + idade + " anos de idade, " + meses + " meses de vida e " + dias + " dias de vida.")
+console.log("VOCÊ TEM " + idade + " ANOS DE IDADE, " + meses + " MESES DE VIDA E " + dias + " DIAS DE VIDA.")
