@@ -90,3 +90,13 @@ switch(idioma){
     default:
         console.log("HELLO!")
 }
+
+
+// OPERADOR TERNÁRIO / ESTRUTURA CONDICIONAL  09/06/2026
+
+var idade = 22;
+var eMaior = idade >= 18 ? "MAIOR DE IDADE" : "MENOR DE IDADE";
+console.log(eMaior);
+
+// OU
+console.log(idade >= 18 ? "MAIOR DE IDADE" : "MENOR DE IDADE")
