@@ -1,5 +1,5 @@
 import leia from 'readline-sync';
-
+// ATIVIDADE 1
 var nota1 = leia.questionFloat("Digite sua primeira nota: ")
 var nota2 = leia.questionFloat("Digite sua segunda nota: ")
 var nota3 = leia.questionFloat("Digite sua terceira nota: ")

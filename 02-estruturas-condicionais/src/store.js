@@ -1,5 +1,5 @@
 import leia from 'readline-sync';
-
+// ATIVIDADE 2
 var options = [
     "Sim", "Nao"
 ]
