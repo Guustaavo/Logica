@@ -9,8 +9,8 @@ const comida = "🔴";
 var largura = 30; // X
 var altura = 15; // Y
 
-var cobraX = [10];
-var cobraY = [7];
+var cobraX = [10, 9, 8, 7];
+var cobraY = [7, 7, 7, 7];
 
 var comidaX = Math.floor(Math.random() * largura);
 var comidaY = Math.floor(Math.random() * altura);
@@ -33,12 +33,22 @@ function desenhar() {
             } else if(x === comidaX && y === comidaY){
                 linha += comida;
             } else{
-                linha += vazio;
+                var desenhouCobrinha = false;
+                
+                for(var i = 0; i < cobraX.length; i++){
+                    if(cobraX[i] === x && cobraY[i] === y){
+                        linha += (i === 0) ? cabeca : corpo;
+                        desenhouCobrinha = true;
+                    }
+                }
+
+                if(desenhouCobrinha === false){
+                    linha += vazio;
+                }
             }
         }
         tela += linha + "\n";
     }
-
     process.stdout.write("\x1b[H" + tela);
 }
 
