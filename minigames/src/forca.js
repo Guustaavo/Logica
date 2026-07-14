@@ -91,17 +91,17 @@ while (tentativas > 0 && venceu === false) {
             palavramontada += "_ "
         }
     }
-    console.log("palavras: " + palavramontada);
-    console.log("tentativas restantes: " + tentativas);
-    console.log("letras erradas: " + letrasErradas.join(', '));
+    console.log("Palavras: " + palavramontada);
+    console.log("Tentativas restantes: " + tentativas);
+    console.log("Letras erradas: " + letrasErradas.join(', '));
 
     let letra = leia.question("DIGITE UMA LETRA: ").toLowerCase();//converter para minusculo
     if (letra.length !== 1) {
-        console.log("digite apenas uma letra");
-        leia.question("pressione ENTER para continuar...");
+        console.log("Digite apenas uma letra");
+        leia.question("Pressione ENTER para continuar...");
     } else if (letrasCertas.includes(letra) || letrasErradas.includes(letra)) {
-        console.log("você ja tentou essa letra!");
-        leia.question("pressione ENTER para continuar...");
+        console.log("Você já tentou essa letra!");
+        leia.question("Pressione ENTER para continuar...");
     } else if (palavraSecreta.includes(letra)) {
         letrasCertas.push(letra);
     } else {
@@ -122,9 +122,9 @@ console.clear();
 console.log("===JOGO DA FORCA===");
 desenhaforca(letrasErradas.length);
 if (venceu === true) {
-    console.log("parabens, você venceu!!");
-    console.log("a palavra certa era: " + palavraSecreta);
+    console.log("Parabéns, você venceu!!");
+    console.log("A palavra certa era: " + palavraSecreta);
 } else {
-    console.log("você perdeu!")
-    console.log("a palavra certa era: " + palavraSecreta);
+    console.log("Você perdeu!")
+    console.log("A palavra certa era: " + palavraSecreta);
 }

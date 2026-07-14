@@ -1,6 +1,5 @@
-import leia from "readline-sync";
+import leia from 'readline-sync';
 
-/*
 var chances = 2
 var fios = leia.keyInSelect(["Fio Vermelho","Fio Verde", "Fio Amarelo","Fio Azul"],"Corte um fio! ")
 var bomba = fios[Math.floor(Math.random() * fios.lenght)];
@@ -29,5 +28,4 @@ if(fios !== bomba && chances === 0){
 //    console.log("O fio correto era o " + bomba + "!")
 }else(
     console.log("VOCÊ CORTOU O FIO CORRETO!")
-)*/
-
+)
