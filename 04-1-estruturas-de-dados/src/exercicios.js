@@ -76,3 +76,68 @@ export function exercicio05(){
     }
     console.log(inversao)
 }
+
+export function exercicio06(){
+    /*Criem um algoritmo que tenha dois vetores de 30 posições,
+um para armazenar a mínima de cada dia e outro para a
+máxima;
+- Usando a função Math.random(), gerem dois valores de
+temperatura para o dia. Estes valores devem estar entre 12 e
+35 graus.
+- De posse destes dois valores gerados, coloquem o menor no
+vetor de mínimas e o maior no vetor de máximas.*/
+    console.log("--- EXERCICIO 06 ---");
+    
+}
+
+export function exercicio07(){
+    /*Crie um vetor de 50 posições, um chamado pai e uma vetora
+de 50 posições chamada mãe. Estes dois vetores devem ser
+preenchidos com valores aleatórios. Depois, crie mais um
+vetorzinho de 50 posições chamado filho. Este vetorzinho filho
+deve ser preenchido com as características genéticas pares
+do pai e com as características genéticas ímpares da mãe*/
+    console.log("--- EXERCICIO 07 ---"); 
+
+}
+
+export function exercicio08(){
+    /*Crie 3 vetores de 9 posições e crie outro com o 1º terço do
+primeiro, o segundo 3º. do segundo e o último terço do 3º.
+Escrever o vetor resultante ao final.*/
+    console.log("--- EXERCICIO 08 ---"); 
+    
+    var v1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var v2 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+    var v3 = [100, 200, 300, 400, 500, 600, 700, 800, 900];
+    
+    var resultado = [];
+    
+    for(var i = 0; i < v1.length; i++){
+        if (i >= 0 && i <= 2){
+            resultado[i] = v1[i];
+        } else if (i >= 3 && i <= 5){
+            resultado[i] = v2[i];
+        } else{
+            resultado[i] = v3[i];
+        }
+    }
+    console.log(resultado);
+}
+
+export function exercicio12(){
+    /*Você está construíndo um algoritmo para verificar se um dado de jogo é viciado ou não.
+Você deve “jogar” o dado 1000x (gerar números de 1 até 6) e verificar a quantidade e a
+porcentagem de vezes que cada valor é gerado. Caso, algum dos valores seja gerado,
+mais de 22% das vezes, você deve dizer que o dado é viciado, caso contrário, dizer que
+ele não é viciado.*/
+    console.log("--- EXERCICIO 12 ---");
+
+    var lados = [0, 0, 0, 0, 0, 0];
+
+    for(var i = 0; i < 1000; i++){
+        var resultadoDado = Math.floor(Math.random() * 6) + 1;
+        lados
+
+    }
+}
