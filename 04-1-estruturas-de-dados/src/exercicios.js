@@ -91,11 +91,18 @@ var minima = [];
 var max = [];
 
 for(var i = 0; i < 30; i++){
-    for(var i = 0; i < 2; i++){
-        var temperatura = Math.floor(Math.random() * 23) + 12
+    for(var j = 0; j < 1; j++){
+        var temperatura1 = Math.floor(Math.random() * 23) + 12
+        var temperatura2 = Math.floor(Math.random() * 23) + 12
     }
-    var menor = temperatura
-    var maior = temperatura
+    var menor = temperatura1
+    var maior = temperatura1
+    if(menor > temperatura2){
+        menor = temperatura2
+    }
+    else if(maior < temperatura2){
+        maior = temperatura2
+    }
 }
 }
 
