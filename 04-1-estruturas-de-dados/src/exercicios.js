@@ -86,8 +86,17 @@ temperatura para o dia. Estes valores devem estar entre 12 e
 35 graus.
 - De posse destes dois valores gerados, coloquem o menor no
 vetor de mínimas e o maior no vetor de máximas.*/
-    console.log("--- EXERCICIO 06 ---");
-    
+console.log("--- EXERCICIO 06 ---");
+var minima = [];
+var max = [];
+
+for(var i = 0; i < 30; i++){
+    for(var i = 0; i < 2; i++){
+        var temperatura = Math.floor(Math.random() * 23) + 12
+    }
+    var menor = temperatura
+    var maior = temperatura
+}
 }
 
 export function exercicio07(){
