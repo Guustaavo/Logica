@@ -9,6 +9,11 @@ export const SIMBOLOS = {
     portal2: "🔵",
 };
 
+export const CONFIGURACOES = {
+    largura: 30,
+    altura: 15,
+}
+
 export const TIPOS_COMIDA = [
     {
         nome: "Maçã",
@@ -69,7 +74,7 @@ export const TIPOS_POWER_UP = [
 ];
 
 export const DIFICULDADES = {
-    1: {
+    0: {
         nome: "Fácil",
         velocidade: 220,
         vidas: 5,
@@ -77,7 +82,7 @@ export const DIFICULDADES = {
         atravessarParede: true,
         inimigo: false
     },
-    2: {
+    1: {
         nome: "Médio",
         velocidade: 160,
         vidas: 3,
@@ -85,7 +90,7 @@ export const DIFICULDADES = {
         atravessarParede: false,
         inimigo: true
     },
-    3: {
+    2: {
         nome: "Dificil",
         velocidade: 100,
         vidas: 2,
