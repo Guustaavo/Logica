@@ -1,5 +1,7 @@
-import { SIMBOLOS, CONFIGURACOES } from "../config/config.js";
+import { SIMBOLOS, CONFIGURACOES, TIPOS_COMIDA } from "../config/config.js";
 import { cobra } from "./cobra.js";
+import { comida } from "./comida.js";
+import { inimigos } from "./inimigos.js";
 
 function iniciar(dificuldade) {
     console.log(dificuldade);
@@ -40,6 +42,10 @@ function desenhar() {
         for (var x = -1; x <= CONFIGURACOES.largura; x++) {
             if (x === -1 || x === CONFIGURACOES.largura || y === -1 || y === CONFIGURACOES.altura) {
                 linha += SIMBOLOS.parede;
+            } else if(comida.estaNaPosicao(x, y)){
+                linha += SIMBOLOS.comida;
+            } else if(inimigos.estaNaPosicao(x, y)){
+                linha += SIMBOLOS.inimigo;
             } else {
                 var desenhouCobra = false;
                 for (var i = 0; i < cobra.partes.length; i++) {
