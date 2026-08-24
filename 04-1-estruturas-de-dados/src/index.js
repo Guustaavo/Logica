@@ -1,5 +1,5 @@
 import leia from 'readline-sync';
-import { exercicio01, exercicio02, exercicio03, exercicio04, exercicio05, exercicio06, exercicio07, exercicio08 } from './exercicios.js'
+import { exercicio01, exercicio02, exercicio03, exercicio04, exercicio05, exercicio06, exercicio07, exercicio08, exercicio09, exercicio10, exercicio11, exercicio12, exercicio13 } from './exercicios.js'
 
 console.log("--- MENU DE EXERCÍCIOS ---")
 var opcao = leia.keyInSelect([
@@ -50,5 +50,25 @@ switch(opcao){
     case 7:
         // ex08
         exercicio08();
+        break;
+    case 8:
+        // ex09
+        exercicio09();
+        break;
+    case 9:
+        // ex10
+        exercicio10();
+        break;
+    case 10:
+        // ex11
+        exercicio11();
+        break;
+    case 11:
+        // ex12
+        exercicio12();
+        break;
+    case 12:
+        // ex13
+        exercicio13();
         break;
 }
