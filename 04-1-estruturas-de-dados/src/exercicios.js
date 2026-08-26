@@ -112,11 +112,11 @@ vetor de mínimas e o maior no vetor de máximas.*/
 
 export function exercicio07() {
     /*Crie um vetor de 50 posições, um chamado pai e uma vetora
-de 50 posições chamada mãe. Estes dois vetores devem ser
-preenchidos com valores aleatórios. Depois, crie mais um
-vetorzinho de 50 posições chamado filho. Este vetorzinho filho
-deve ser preenchido com as características genéticas pares
-do pai e com as características genéticas ímpares da mãe*/
+    de 50 posições chamada mãe. Estes dois vetores devem ser
+    preenchidos com valores aleatórios. Depois, crie mais um
+    vetorzinho de 50 posições chamado filho. Este vetorzinho filho
+    deve ser preenchido com as características genéticas pares
+    do pai e com as características genéticas ímpares da mãe*/
     console.log("--- EXERCICIO 07 ---\n");
 
     var pai = [];
@@ -146,8 +146,8 @@ do pai e com as características genéticas ímpares da mãe*/
 
 export function exercicio08() {
     /*Crie 3 vetores de 9 posições e crie outro com o 1º terço do
-primeiro, o segundo 3º. do segundo e o último terço do 3º.
-Escrever o vetor resultante ao final.*/
+    primeiro, o segundo 3º. do segundo e o último terço do 3º.
+    Escrever o vetor resultante ao final.*/
     console.log("--- EXERCICIO 08 ---\n");
 
     var v1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -191,17 +191,37 @@ export function exercicio09() {
     }
 
     if (temDuplicada) {
-        console.log("Há um ou mais valores duplicados.")
+        console.log("Há um ou mais valores duplicados.");
     } else {
-        console.log("Não há nenhum valor duplicado, resultado como esperado!")
+        console.log("Não há nenhum valor duplicado, resultado como esperado!");
     }
 }
 
 export function exercicio10() {
+    /*Criar um vetor de 4 posições e solicitar ao usuário que forneça
+    4 números pares para armazenar nele. Caso o usuário digite
+    um número ímpar, o algoritmo deve avisar e solicitar um novo
+    valor.*/
     console.log("--- EXERCICIO 10 ---\n");
+    var vetor = [];
+    while (vetor.length < 4) {
+        var numerosPares = leia.questionInt("Digite mais " + (4 - vetor.length) + " números pares para colocarmos no vetor: ");
+
+        if (numerosPares % 2 === 0) {
+            console.log("Número adicionado com êxito.");
+            vetor.push(numerosPares);
+        }
+        else {
+            console.log("Número inválido! Só permitimos números pares. Tente novamente.");
+        }
+    }
+    console.log("\nVetor:");
+    console.log(vetor);
 }
 
 export function exercicio11() {
+    /*Crie uma matriz 8x8 com números aleatórios e posteriormente
+    escreva na tela, quais são maiores que 10.*/
     console.log("--- EXERCICIO 11 ---\n");
 }
 
@@ -221,17 +241,17 @@ export function exercicio12() {
         lados[resultadoDado - 1]++;
         /* if(resultadoDado === 1) {
             lados[0]++
-            }else if (resultadoDado === 2) {
-                lados[1]++
-                }else if (resultadoDado === 3) {
-                    lados[2]++
-                    }else if (resultadoDado === 4) {
-                        lados[3]++
-                        }else if (resultadoDado === 5) {
-                            lados[4]++
-                            }else if (resultadoDado === 6) {
-                                lados[5]++
-                                }*/
+        } else if (resultadoDado === 2) {
+            lados[1]++
+        } else if (resultadoDado === 3) {
+            lados[2]++
+        } else if (resultadoDado === 4) {
+            lados[3]++
+        } else if (resultadoDado === 5) {
+            lados[4]++
+        } else if (resultadoDado === 6) {
+            lados[5]++
+        }*/
     }
     for (j = 0; j < lados.length; j++) {
         var valor = lados[j];
@@ -242,13 +262,17 @@ export function exercicio12() {
     }
     console.log("\nRESULTADO:")
     if (viciado) {
-        console.log("O dado é viciado! Um ou mais lados caíram mais de 22% das vezes jogadas.")
+        console.log("O dado é viciado! Um ou mais lados caíram mais de 22% das vezes jogadas.");
     }
     else {
-        console.log("O dado não é viciado.")
+        console.log("O dado não é viciado.");
     }
 }
 
 export function exercicio13() {
+    /*Você é um professor e está criando um algoritmo para fazer a correção das provas de
+    maneira automática para você. Primeiro, crie um vetor chamado gabarito com 10
+    posições e preencha manualmente com as letras das respostas. Depois, solicite, qual é
+    as respostas do aluno. Por fim, verifique quantas estão corretas e gere a nota.*/
     console.log("--- EXERCICIO 13 ---\n");
 }
