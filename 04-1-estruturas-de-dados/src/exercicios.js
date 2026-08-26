@@ -298,4 +298,31 @@ export function exercicio13() {
     posições e preencha manualmente com as letras das respostas. Depois, solicite, qual é
     as respostas do aluno. Por fim, verifique quantas estão corretas e gere a nota.*/
     console.log("--- EXERCICIO 13 ---\n");
+    var gabarito = ["A", "B", "A", "C", "A", "B", "A", "C", "A", "B"];
+    var respostas = [];
+    var corretas = 0;
+
+    for (var i = 0; i < gabarito.length; i++) {
+        var prova = leia.keyInSelect(["A", "B", "C"], "Marque a alternativa da questão " + (i + 1));
+        if (prova === 0) {
+            respostas.push("A");
+        }
+        if (prova === 1) {
+            respostas.push("B");
+        }
+        if (prova === 2) {
+            respostas.push("C");
+        }
+    }
+    for (var j = 0; j < gabarito.length; j++) {
+        if (respostas[j] === gabarito[j]) {
+            corretas++;
+        }
+    }
+
+    console.log("Gabarito: ");
+    console.log(gabarito);
+    console.log("Alternativas assinaladas: ");
+    console.log(respostas);
+    console.log("\nNota final: " + corretas + "/" + "10");
 }
