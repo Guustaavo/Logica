@@ -5,7 +5,7 @@ export function exercicio01() {
     /*Crie um algoritmo que solicite a entrada de 10 números pelo usuário, armazene-os em
     um vetor e então crie outro vetor com os valores do primeiro vetor multiplicados por 5.
     Por fim exiba os dois vetores.*/
-    console.log("--- EXERCICIO 01 ---\n");
+    console.log("\n--- EXERCICIO 01 ---\n");
     var numeros = pedirNumeros(10);
     var multiplicacao = [];
 
@@ -23,7 +23,7 @@ export function exercicio02() {
     /*Escreva um algoritmo que solicite ao usuário a entrada de 5 números, e que exiba o
     somatório desses números na tela. Após exibir a soma, o programa deve mostrar
     também os números que o usuário digitou, um por linha.*/
-    console.log("--- EXERCICIO 02 ---\n");
+    console.log("\n--- EXERCICIO 02 ---\n");
     var numeros = pedirNumeros(5);
     var soma = 0;
 
@@ -37,7 +37,7 @@ export function exercicio02() {
 export function exercicio03() {
     /*Crie um algoritmo para ler 10 números inteiros 
     e mostrar os números pares deste vetor.*/
-    console.log("--- EXERCICIO 03 ---\n");
+    console.log("\n--- EXERCICIO 03 ---\n");
     var numeros = pedirNumeros(10);
 
     console.log("OS NUMEROS PARES SÃO: ");
@@ -51,12 +51,12 @@ export function exercicio03() {
 export function exercicio04() {
     /*Crie um algoritmo para ler 15 números inteiros e mostrar 
     no final, os que forem maiores ou igual a 10.*/
-    console.log("--- EXERCICIO 04 ---\n");
+    console.log("\n--- EXERCICIO 04 ---\n");
     var numeros = pedirNumeros(15);
 
     for (var i = 0; i < numeros.length; i++) {
         if (numeros[i] >= 10) {
-            console.log(numeros[i])
+            console.log(numeros[i]);
         }
     }
 }
@@ -65,16 +65,16 @@ export function exercicio05() {
     /*Faça um algoritmo para ler um vetor com 10 elementos e inverter a posição destes
     elementos, de tal modo que o primeiro elemento venha a ser o último depois da
     inversão.*/
-    console.log("--- EXERCICIO 05 ---\n");
+    console.log("\n--- EXERCICIO 05 ---\n");
     var numeros = pedirNumeros(5);
     var i2 = 0;
-    var inversao = []
+    var inversao = [];
 
     for (var i = 4; i >= 0; i--) {
-        inversao[i2] = numeros[i]
-        i2++
+        inversao[i2] = numeros[i];
+        i2++;
     }
-    console.log(inversao)
+    console.log(inversao);
 }
 
 export function exercicio06() {
@@ -86,7 +86,7 @@ temperatura para o dia. Estes valores devem estar entre 12 e
 35 graus.
 - De posse destes dois valores gerados, coloquem o menor no
 vetor de mínimas e o maior no vetor de máximas.*/
-    console.log("--- EXERCICIO 06 ---\n");
+    console.log("\n--- EXERCICIO 06 ---\n");
     var minima = [];
     var max = [];
 
@@ -117,7 +117,7 @@ export function exercicio07() {
     vetorzinho de 50 posições chamado filho. Este vetorzinho filho
     deve ser preenchido com as características genéticas pares
     do pai e com as características genéticas ímpares da mãe*/
-    console.log("--- EXERCICIO 07 ---\n");
+    console.log("\n--- EXERCICIO 07 ---\n");
 
     var pai = [];
     var mae = [];
@@ -148,7 +148,7 @@ export function exercicio08() {
     /*Crie 3 vetores de 9 posições e crie outro com o 1º terço do
     primeiro, o segundo 3º. do segundo e o último terço do 3º.
     Escrever o vetor resultante ao final.*/
-    console.log("--- EXERCICIO 08 ---\n");
+    console.log("\n--- EXERCICIO 08 ---\n");
 
     var v1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     var v2 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
@@ -172,7 +172,7 @@ export function exercicio09() {
     /*Crie um algoritmo que gere um vetor com 10 itens, depois
     disso, você deve percorrer a lista e verificar se existe algum
     valor duplicado.*/
-    console.log("--- EXERCICIO 09 ---\n");
+    console.log("\n--- EXERCICIO 09 ---\n");
     var itens = [];
     var temDuplicada = false;
 
@@ -202,7 +202,7 @@ export function exercicio10() {
     4 números pares para armazenar nele. Caso o usuário digite
     um número ímpar, o algoritmo deve avisar e solicitar um novo
     valor.*/
-    console.log("--- EXERCICIO 10 ---\n");
+    console.log("\n--- EXERCICIO 10 ---\n");
     var vetor = [];
     while (vetor.length < 4) {
         var numerosPares = leia.questionInt("Digite mais " + (4 - vetor.length) + " números pares para colocarmos no vetor: ");
@@ -222,7 +222,7 @@ export function exercicio10() {
 export function exercicio11() {
     /*Crie uma matriz 8x8 com números aleatórios e posteriormente
     escreva na tela, quais são maiores que 10.*/
-    console.log("--- EXERCICIO 11 ---\n");
+    console.log("\n--- EXERCICIO 11 ---\n");
     var matriz = [
         [],
         [],
@@ -254,7 +254,7 @@ export function exercicio12() {
     porcentagem de vezes que cada valor é gerado. Caso, algum dos valores seja gerado,
     mais de 22% das vezes, você deve dizer que o dado é viciado, caso contrário, dizer que
     ele não é viciado.*/
-    console.log("--- EXERCICIO 12 ---\n");
+    console.log("\n--- EXERCICIO 12 ---\n");
 
     var lados = [0, 0, 0, 0, 0, 0];
     var viciado = false;
@@ -297,7 +297,7 @@ export function exercicio13() {
     maneira automática para você. Primeiro, crie um vetor chamado gabarito com 10
     posições e preencha manualmente com as letras das respostas. Depois, solicite, qual é
     as respostas do aluno. Por fim, verifique quantas estão corretas e gere a nota.*/
-    console.log("--- EXERCICIO 13 ---\n");
+    console.log("\n--- EXERCICIO 13 ---\n");
     var gabarito = ["A", "B", "A", "C", "A", "B", "A", "C", "A", "B"];
     var respostas = [];
     var corretas = 0;
