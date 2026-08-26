@@ -223,6 +223,29 @@ export function exercicio11() {
     /*Crie uma matriz 8x8 com números aleatórios e posteriormente
     escreva na tela, quais são maiores que 10.*/
     console.log("--- EXERCICIO 11 ---\n");
+    var matriz = [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ]
+    for (var i = 0; i < 8; i++) {
+        for (var j = 0; j < 8; j++) {
+            var sorteador = Math.floor(Math.random() * 20) + 1;
+            matriz[i].push(sorteador);
+        }
+    }
+    matriz.forEach(linha => {
+        linha.forEach(numero => {
+            if (numero > 10) {
+                console.log(numero);
+            }
+        });
+    });
 }
 
 export function exercicio12() {
