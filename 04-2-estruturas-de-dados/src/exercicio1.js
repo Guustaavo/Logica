@@ -1,4 +1,18 @@
 import leia from 'readline-sync';
+/*
+Crie um vetor com 20 objetos representando assentos de uma sala de cinema. Cada
+assento deverá possuir: - número, ocupado, tipo. O tipo poderá ser "normal" ou
+"preferencial". O programa deverá apresentar um menu:
+1 - Mostrar assentos
+ 2 - Reservar assento
+ 3 - Cancelar reserva
+ 4 - Mostrar quantidade de assentos livres
+ 5 - Mostrar quantidade de assentos ocupados
+ 0 - Encerrar
+Sempre que o usuário solicitar uma reserva ou cancelamento, o programa deverá percorrer
+o vetor procurando o assento informado. Ao final, também informe a porcentagem de
+ocupação da sala.
+*/
 
 var cinema = [];
 for (var i = 0; i < 20; i++) {
