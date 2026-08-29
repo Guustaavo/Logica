@@ -13,3 +13,49 @@ Crie um menu:
 Todas as buscas deverão ser feitas utilizando estruturas de repetição.
 */
 
+var compromissos = [
+    {
+        dia: "Sábado",
+        horario: 17,
+        descricao: "Culto dos jovens",
+        concluido: false,
+    },
+    {
+        dia: "Sexta-feira",
+        horario: 19,
+        descricao: "Curso",
+        concluido: false,
+    },
+    {
+        dia: "Domingo",
+        horario: 8,
+        descricao: "Culto especial",
+        concluido: false,
+    },
+    {
+        dia: "Segunda-feira",
+        horario: 15,
+        descricao: "Vôlei",
+        concluido: false,
+    },
+    {
+        dia: "Quarta-feira",
+        horario: 10,
+        descricao: "Senai",
+        concluido: false,
+    }
+]
+
+function listarCompromissos() {
+    console.log("\n=== COMPROMISSOS ===\n");
+    var i = 1;
+    compromissos.forEach((compromisso) => {
+        console.log(i);
+        console.log("Compromisso: " + compromisso.descricao);
+        console.log("Dia: " + compromisso.dia);
+        console.log("Horário: " + compromisso.horario);
+        console.log("Concluído: " + compromisso.concluido);
+        i++;
+        console.log("\n");
+    })
+}
