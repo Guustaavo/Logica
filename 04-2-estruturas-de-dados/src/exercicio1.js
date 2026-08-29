@@ -74,11 +74,11 @@ function cancelar() {
     }
 }
 
-function mostrarLivres(){
+function mostrarLivres() {
     var contador = 0;
     console.log("=== CADEIRAS LIVRES ===")
     cinema.forEach((cadeira) => {
-        if(cadeira.ocupado === false){
+        if (cadeira.ocupado === false) {
             contador++;
             console.log("Cadeira livre: " + cadeira.numero + " | " + cadeira.tipo)
         }
@@ -86,11 +86,11 @@ function mostrarLivres(){
     console.log("A quantidade de cadeiras livres é: " + contador)
 }
 
-function mostrarOcupadas(){
+function mostrarOcupadas() {
     var contador = 0;
     console.log("=== CADEIRAS OCUPADAS ===")
     cinema.forEach((cadeira) => {
-        if(cadeira.ocupado === true){
+        if (cadeira.ocupado === true) {
             contador++;
             console.log("Cadeira ocupada: " + cadeira.numero + " | " + cadeira.tipo)
         }
@@ -98,8 +98,13 @@ function mostrarOcupadas(){
     console.log("A quantidade de cadeiras ocupadas é: " + contador)
 }
 
+function continuar() {
+    var continuar = leia.keyInSelect(["Voltar"], "Confirme para voltar ao menu principal.");
+}
+
 var opcao;
 do {
+    console.clear();
     console.log("\n=====CINEMA=====");
     console.log("1 - Mostrar assentos");
     console.log("2 - Reservar assentos");
@@ -113,18 +118,23 @@ do {
     switch (opcao) {
         case 1:
             mostrarCinema();
+            continuar();
             break;
         case 2:
             reservar();
+            continuar();
             break;
         case 3:
             cancelar();
+            continuar();
             break;
         case 4:
             mostrarLivres();
+            continuar();
             break;
         case 5:
             mostrarOcupadas();
+            continuar();
             break;
         default:
             console.log("Sistema encerrado!")
