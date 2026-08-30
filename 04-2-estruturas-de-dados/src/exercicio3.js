@@ -59,3 +59,57 @@ function listarCompromissos() {
         console.log("\n");
     })
 }
+
+function listarPendentes() {
+    console.log("\n=== COMPROMISSOS PENDENTES ===\n");
+    var i = 1;
+    compromissos.forEach((compromisso) => {
+        if (compromisso.concluido === true) {
+            console.log(i);
+            console.log("Compromisso: " + compromisso.descricao);
+            console.log("Dia: " + compromisso.dia);
+            console.log("Horário: " + compromisso.horario);
+            console.log("Concluído: " + compromisso.concluido);
+            console.log("\n");
+        }
+        i++;
+    })
+}
+
+function marcarConcluido() {
+    var opcoes = [];
+    compromissos.forEach((compromisso) => {
+        opcoes.push(compromisso.descricao);
+    })
+    console.log("\n=== MARCAR COMO CONCLUÍDO ===\n");
+    var escolha = leia.keyInSelect(opcoes, "Selecione um exercício para marcar como concluído: ");
+    for (var i = 0; i < opcoes.length; i++) {
+        if (escolha === i) {
+            compromissos[i].concluido = true;
+            console.log(compromissos[i].descricao + " foi marcado como concluído.");
+        }
+    }
+}
+
+function mostrarDia() {
+    var opcoes = [];
+    var j = 1;
+    compromissos.forEach((compromisso) => {
+        opcoes.push(compromisso.dia);
+    })
+    console.log("\n=== MOSTRAR DIAS ===\n");
+    var escolha = leia.keyInSelect(opcoes, "Selecione um dia para ver os compromissos: ");
+    for (var i = 0; i < opcoes.length; i++) {
+        if (escolha === i) {
+            compromissos.forEach((compromisso) => {
+                if (compromisso === opcoes[i]) {
+                    console.log(j);
+                    console.log("Compromisso: " + compromisso.descricao);
+                    console.log("Horário: " + compromisso.horario);
+                    console.log("Concluído: " + compromisso.concluido);
+                    console.log("\n");
+                }
+            })
+        }
+    }
+}
