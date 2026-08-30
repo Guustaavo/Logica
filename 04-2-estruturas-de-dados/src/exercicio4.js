@@ -1,8 +1,7 @@
 import leia from 'readline-sync';
 /*
 Crie um vetor contendo objetos representando livros. Cada livro deverá possuir: titulo,
-autor,
-ano, emprestado. Crie um menu:
+autor, ano, emprestado. Crie um menu:
 1 - Listar livros
 2 - Mostrar livros disponíveis
 3 - Emprestar livro
@@ -15,3 +14,35 @@ Para emprestar ou devolver um livro, o programa deverá percorrer todo o vetor p
 pelo título informado.
 */
 
+var livros = [
+    {
+        titulo: "Bíblia",
+        autor: "Deus",
+        ano: 100,
+        emprestado: false,
+    },
+    {
+        titulo: "One Piece",
+        autor: "Eiichiro Oda",
+        ano: 1997,
+        emprestado: false,
+    },
+    {
+        titulo: "How to Win",
+        autor: "Winner",
+        ano: 2026,
+        emprestado: false,
+    },
+    {
+        titulo: "O Pequeno Príncipe",
+        autor: "Antoine de Saint-Exupéry",
+        ano: 1943,
+        emprestado: false,
+    },
+    {
+        titulo: "A Culpa é das Estrelas",
+        autor: "John Green",
+        ano: 2012,
+        emprestado: false,
+    }
+]
