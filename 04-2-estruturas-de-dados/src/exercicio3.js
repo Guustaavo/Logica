@@ -64,12 +64,11 @@ function listarPendentes() {
     console.log("\n=== COMPROMISSOS PENDENTES ===\n");
     var i = 1;
     compromissos.forEach((compromisso) => {
-        if (compromisso.concluido === true) {
+        if (compromisso.concluido !== true) {
             console.log(i);
             console.log("Compromisso: " + compromisso.descricao);
             console.log("Dia: " + compromisso.dia);
             console.log("Horário: " + compromisso.horario);
-            console.log("Concluído: " + compromisso.concluido);
             console.log("\n");
         }
         i++;
@@ -102,14 +101,97 @@ function mostrarDia() {
     for (var i = 0; i < opcoes.length; i++) {
         if (escolha === i) {
             compromissos.forEach((compromisso) => {
-                if (compromisso === opcoes[i]) {
+                if (compromisso.dia === opcoes[i]) {
                     console.log(j);
                     console.log("Compromisso: " + compromisso.descricao);
                     console.log("Horário: " + compromisso.horario);
                     console.log("Concluído: " + compromisso.concluido);
                     console.log("\n");
                 }
+                j++;
             })
         }
     }
 }
+
+function mostrarConcluidos() {
+    var i = 1;
+    var j = 0;
+    console.log("\n=== COMPROMISSOS CONCLUÍDOS ===\n");
+    compromissos.forEach((compromisso) => {
+        if (compromisso.concluido === true) {
+            console.log(i);
+            console.log("Compromisso: " + compromisso.descricao);
+            console.log("Dia: " + compromisso.dia);
+            console.log("Horário: " + compromisso.horario);
+            j++;
+            console.log("\n");
+        }
+        i++;
+    })
+    console.log(j + " compromissos já foram concluídos.");
+}
+
+function mostrarPendentes() {
+    var i = 1;
+    var j = 0;
+    console.log("\n=== QUANTIDADE DE PENDENTES ===\n");
+    compromissos.forEach((compromisso) => {
+        if (compromisso.concluido === false) {
+            console.log(i);
+            console.log("Compromisso: " + compromisso.descricao);
+            console.log("Dia: " + compromisso.dia);
+            console.log("Horário: " + compromisso.horario);
+            j++;
+            console.log("\n");
+        }
+        i++;
+    })
+    console.log("Você têm " + j + " compromissos pendentes.");
+}
+
+function continuar() {
+    var continuar = leia.keyInSelect(["Voltar"], "Confirme para voltar ao menu principal.");
+}
+
+var opcoes = [
+    "Listar todos os compromissos",
+    "Listar compromissos pendentes",
+    "Marcar compromisso como concluído",
+    "Mostrar compromissos de um determinado dia",
+    "Mostrar quantidade de compromissos concluídos",
+    "Mostrar quantidade de compromissos pendentes",
+    "Parar sistema"
+]
+
+do {
+    console.clear();
+    console.log("\n=== AGENDA DE COMPROMISSOS ===");
+
+    var opcao = leia.keyInSelect(opcoes, "Selecione uma opção: ");
+
+    if (opcao === 0) {
+        listarCompromissos();
+        continuar();
+    }
+    if (opcao === 1) {
+        listarPendentes();
+        continuar();
+    }
+    if (opcao === 2) {
+        marcarConcluido();
+        continuar();
+    }
+    if (opcao === 3) {
+        mostrarDia();
+        continuar();
+    }
+    if (opcao === 4) {
+        mostrarConcluidos();
+        continuar();
+    }
+    if (opcao === 5) {
+        mostrarPendentes();
+        continuar();
+    }
+} while (opcao !== 6);
