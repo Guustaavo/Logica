@@ -2,21 +2,21 @@ import leia from 'readline-sync';
 
 var ud = leia.question("TYPE THE LAST NUMBER DA SUA PLACA: ");
 
-if(ud === "0" || ud === "1"){
+if (ud === "0" || ud === "1") {
     console.log("YOU CANNOT RODAR IN MONDAY");
-}else if(ud === "2" || ud === "3"){
-    console.log("YOU CANNOT RODAR IN TUESDAY")
-}else if(ud === "4" || ud === "5"){
-    console.log("YOU CANNOT RODAR IN WEDNESDAY")
-}else if(ud === "6" || ud === "7"){
-    console.log("YOU CANNOT RODAR IN THURSDAY")
-}else if(ud === "8" || ud === "9"){
-    console.log("YOU CANNOT RODAR IN FRIDAY")
-}else{
-    console.log("INVALID!")
+} else if (ud === "2" || ud === "3") {
+    console.log("YOU CANNOT RODAR IN TUESDAY");
+} else if (ud === "4" || ud === "5") {
+    console.log("YOU CANNOT RODAR IN WEDNESDAY");
+} else if (ud === "6" || ud === "7") {
+    console.log("YOU CANNOT RODAR IN THURSDAY");
+} else if (ud === "8" || ud === "9") {
+    console.log("YOU CANNOT RODAR IN FRIDAY");
+} else {
+    console.log("INVALID!");
 }
 
-
+/*
 switch(ud){
     case "0":
         case "1":
@@ -40,4 +40,5 @@ switch(ud){
         break;
     default:
         console.log("INVALID!")
-}
+} 
+*/
