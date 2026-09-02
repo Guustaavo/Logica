@@ -1,5 +1,6 @@
 import leia from 'readline-sync';
 
+export function exercicio07() {
 var salario = leia.questionFloat("Digite o valor do salario: ");
 var emprestimo = leia.questionFloat("Digite o valor do emprestimo: ");
 var prestacoes = leia.questionInt("Digite o numero de prestacoes: ");
@@ -10,4 +11,5 @@ if (valorPrestacao <= salario * 0.30) {
     console.log("Emprestimo pode ser concedido.");
 } else {
     console.log("Emprestimo nao pode ser concedido.");
+}
 }

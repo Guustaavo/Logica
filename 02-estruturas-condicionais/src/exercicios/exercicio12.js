@@ -1,5 +1,6 @@
 import leia from 'readline-sync';
 
+export function exercicio12() {
 var idade = leia.questionInt("Informe sua idade: ");
 
 if (idade >= 18) {
@@ -16,4 +17,5 @@ if (idade >= 18) {
     } else {
         console.log("Infelizmente voce precisara da autorizacao dos seus pais antes de fazer isto, volte quando ja tiver.");
     }
+}
 }

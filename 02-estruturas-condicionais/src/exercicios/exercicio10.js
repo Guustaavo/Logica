@@ -1,5 +1,6 @@
 import leia from 'readline-sync';
 
+export function exercicio10() {
 var value = leia.keyInSelect([
     "R$10", "R$25", "R$50", "Outro valor"
 ], "QUANTO DESEJA DOAR?");
@@ -13,4 +14,5 @@ if (value === "R$10") {
 } else {
     var outro = leia.questionFloat("Digite o valor que voce deseja doar: ");
     console.log("Obrigado por doar R$" + outro + "!");
+}
 }

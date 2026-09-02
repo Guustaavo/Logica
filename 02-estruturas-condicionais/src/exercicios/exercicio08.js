@@ -1,5 +1,6 @@
 import leia from 'readline-sync';
 
+export function exercicio08() {
 var months = [
     "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 ]
@@ -13,4 +14,5 @@ else if (months === "February") {
 }
 else {
     console.log("This month has 30 days.");
+}
 }

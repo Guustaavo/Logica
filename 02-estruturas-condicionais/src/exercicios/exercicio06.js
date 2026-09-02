@@ -1,5 +1,6 @@
 import leia from 'readline-sync';
 
+export function exercicio06() {
 var produto = leia.questionFloat("Type the valor do produto: ");
 var dollar = leia.questionInt("Type the quantidade de moedas de um real que voce tem: ") * 1;
 var half = leia.questionInt("Type the quantidade de moedas de 50 centavos que voce tem: ") * 0.50;
@@ -14,4 +15,5 @@ if (amount >= produto) {
 } else {
     console.log("Im sorry, but you still need money to buy it.");
     console.log("You have R$" + amount);
+}
 }

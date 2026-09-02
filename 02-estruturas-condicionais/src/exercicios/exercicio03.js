@@ -1,5 +1,7 @@
 import leia from 'readline-sync';
 
+
+export function exercicio03() {
 var ud = leia.question("TYPE THE LAST NUMBER DA SUA PLACA: ");
 
 if (ud === "0" || ud === "1") {
@@ -14,6 +16,7 @@ if (ud === "0" || ud === "1") {
     console.log("YOU CANNOT RODAR IN FRIDAY");
 } else {
     console.log("INVALID!");
+}
 }
 
 /*

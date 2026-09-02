@@ -1,5 +1,6 @@
 import leia from 'readline-sync';
 
+export function exercicio05() {
 var cliente1 = leia.question("First client name: ");
 var valor1 = leia.questionFloat("First client stuffs cost: ");
 var cliente2 = leia.question("Second client name: ");
@@ -23,4 +24,5 @@ if (valor1 > 20 && valor2 > 20) {
     console.log("Infelizmente, nenhum cliente gastou mais de 20 reais.");
     console.log("O valor total pago foi de: " + total);
     console.log("A media do valor total gasto foi de " + media);
+}
 }

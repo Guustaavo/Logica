@@ -1,5 +1,6 @@
 import leia from 'readline-sync';
 
+export function exercicio09() {
 var nome = leia.question("Digite o nome do funcionario: ");
 var salario = leia.questionFloat("Digite quanto ele ganha: ");
 var dependentes = leia.questionInt("Digite quantos dependentes ele possui: ");
@@ -28,4 +29,5 @@ if (dependentes === 3) {
 if (dependentes >= 4) {
     var se4 = por4 + salario;
     console.log("Seu salario final sera de: " + se4);
+}
 }
