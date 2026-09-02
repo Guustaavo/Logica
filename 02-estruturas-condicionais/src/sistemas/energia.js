@@ -1,7 +1,7 @@
 import leia from "readline-sync";
 // ATIVIDADE 8
 var kwh = leia.questionFloat("Digite a quantidade de kWh: ");
-var beneficiario = leia.keyInSelect(["sim", "nao"]);
+var beneficiario = leia.keyInSelect(["Sim", "Não"]);
 var preco;
 
 if (kwh < 100) {
