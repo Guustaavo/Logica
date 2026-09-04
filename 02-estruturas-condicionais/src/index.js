@@ -11,6 +11,15 @@ import { exercicio09 } from './exercicios/exercicio09.js';
 import { exercicio10 } from './exercicios/exercicio10.js';
 import { exercicio11 } from './exercicios/exercicio11.js';
 import { exercicio12 } from './exercicios/exercicio12.js';
+import { sistema01 } from './sistemas/escola.js';
+import { sistema02 } from './sistemas/loja.js';
+import { sistema03 } from './sistemas/estacionamento.js';
+import { sistema04 } from './sistemas/construtora.js';
+import { sistema05 } from './sistemas/calculadora.js';
+import { sistema06 } from './sistemas/tranportadora.js';
+import { sistema07 } from './sistemas/cinema.js';
+import { sistema08 } from './sistemas/energia.js';
+import { sistema09 } from './sistemas/futebol.js';
 
 var exercicios = [
     "Exercício 01",
@@ -42,7 +51,7 @@ var sistemas = [
 ];
 
 function continuar() {
-    var confirmacao = leia.keyInSelect(["Confirmar"], "Confirme para continuar.");
+    var confirmacao = leia.keyInSelect(["Confirmar"], "Confirme para continuar.\n");
 }
 
 do {
@@ -52,39 +61,51 @@ do {
     if (ver === 0) {
         var opcao = leia.keyInSelect(exercicios, "Selecione um exercício.");
         if (opcao === 0) {
+            console.log("\n=== Exercício 01 ===\n");
             exercicio01();
         }
         if (opcao === 1) {
+            console.log("\n=== Exercício 02 ===\n");
             exercicio02();
         }
         if (opcao === 2) {
+            console.log("\n=== Exercício 03 ===\n");
             exercicio03();
         }
         if (opcao === 3) {
+            console.log("\n=== Exercício 04 ===\n");
             exercicio04();
         }
         if (opcao === 4) {
+            console.log("\n=== Exercício 05 ===\n");
             exercicio05();
         }
         if (opcao === 5) {
+            console.log("\n=== Exercício 06 ===\n");
             exercicio06();
         }
         if (opcao === 6) {
+            console.log("\n=== Exercício 07 ===\n");
             exercicio07();
         }
         if (opcao === 7) {
+            console.log("\n=== Exercício 08 ===\n");
             exercicio08();
         }
         if (opcao === 8) {
+            console.log("\n=== Exercício 09 ===\n");
             exercicio09();
         }
         if (opcao === 9) {
+            console.log("\n=== Exercício 10 ===\n");
             exercicio10();
         }
         if (opcao === 10) {
+            console.log("\n=== Exercício 11 ===\n");
             exercicio11();
         }
         if (opcao === 11) {
+            console.log("\n=== Exercício 12 ===\n");
             exercicio12();
         }
         if (opcao === 12) {
@@ -98,31 +119,40 @@ do {
     if (ver === 1) {
         var opcao = leia.keyInSelect(sistemas, "Selecione um sistema.");
         if (opcao === 0) {
-            
+            console.log("\n=== Sistema 01 ===\n");
+            sistema01();
         }
         if (opcao === 1) {
-            
+            console.log("\n=== Sistema 02 ===\n");
+            sistema02();
         }
         if (opcao === 2) {
-            
+            console.log("\n=== Sistema 03 ===\n");
+            sistema03();
         }
         if (opcao === 3) {
-            
+            console.log("\n=== Sistema 04 ===\n");
+            sistema04();
         }
         if (opcao === 4) {
-            
+            console.log("\n=== Sistema 05 ===\n");
+            sistema05();
         }
         if (opcao === 5) {
-            
+            console.log("\n=== Sistema 06 ===\n");
+            sistema06();
         }
         if (opcao === 6) {
-            
+            console.log("\n=== Sistema 07 ===\n");
+            sistema07();
         }
         if (opcao === 7) {
-            
+            console.log("\n=== Sistema 08 ===\n");
+            sistema08();
         }
         if (opcao === 8) {
-            
+            console.log("\n=== Sistema 09 ===\n");
+            sistema09();
         }
         if (opcao === 9) {
             continue;
