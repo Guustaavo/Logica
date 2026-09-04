@@ -36,23 +36,23 @@ if(tentativas > 0){
 }
 */
 
-var somaNotas = 0
-var quantidade = 5
-var contador = 1
+var somaNotas = 0;
+var quantidade = 5;
+var contador = 1;
 
-while(contador <= quantidade){
-    var nota = leia.questionFloat("DIGITE A NOTA " + contador)
-    somaNotas = somaNotas + nota
-    contador++
+while (contador <= quantidade) {
+    var nota = leia.questionFloat("DIGITE A NOTA " + contador);
+    somaNotas = somaNotas + nota;
+    contador++;
 }
 
-var media = somaNotas / quantidade
-console.log("MÉDIA " + media.toFixed(1))
+var media = somaNotas / quantidade;
+console.log("MÉDIA " + media.toFixed(1));
 
-for(var i = 0; cont <= quantidade; cont++){
-    var nota = leia.questionFloat("DIGITE A NOTA " + cont + ": ")
-    somaNotas = somaNotas + nota
+for (var i = 0; cont <= quantidade; cont++) {
+    var nota = leia.questionFloat("DIGITE A NOTA " + cont + ": ");
+    somaNotas = somaNotas + nota;
 }
 
-var media = somaNotas / quantidade
-console.log("MÉDIA " + media.toFixed(1))
+var media = somaNotas / quantidade;
+console.log("MÉDIA " + media.toFixed(1));

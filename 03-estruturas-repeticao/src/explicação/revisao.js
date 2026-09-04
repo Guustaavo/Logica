@@ -17,8 +17,8 @@ while (i < 100) {
 
 do {
     // CÓDIGO
-    i++
-} while (i > 10)
+    i++;
+} while (i > 10);
 
 
 // OBJETOS
