@@ -21,7 +21,7 @@ import { sistema07 } from './sistemas/cinema.js';
 import { sistema08 } from './sistemas/energia.js';
 import { sistema09 } from './sistemas/futebol.js';
 
-var exercicios = [
+const exercicios = [
     "Exercício 01",
     "Exercício 02",
     "Exercício 03",
@@ -37,7 +37,7 @@ var exercicios = [
     "Voltar"
 ];
 
-var sistemas = [
+const sistemas = [
     "Calculadora",
     "Cinema",
     "Identificador de triângulos",
@@ -56,7 +56,7 @@ function continuar() {
 
 do {
     console.clear();
-    console.log("=== MENU ===\n");
+    console.log("=== Estruturas Condicionais ===\n");
     var ver = leia.keyInSelect(["Exercícios", "Sistemas", "Parar sistema"], "Escolha o que você deseja ver.");
     if (ver === 0) {
         var opcao = leia.keyInSelect(exercicios, "Selecione um exercício.");
@@ -165,4 +165,4 @@ do {
     if (ver === 2) {
         console.log("\nSistema encerrado.\n");
     }
-} while (ver !== 2)
+} while (ver !== 2);
