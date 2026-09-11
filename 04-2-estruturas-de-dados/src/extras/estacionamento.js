@@ -45,5 +45,29 @@ function mostrarVagas() {
 }
 
 function ocuparVaga() {
-    
+    var vagas = [];
+    estacionamento.forEach((vaga) => {
+        vagas.push(vaga.numero);
+    })
+    var opcao = leia.keyInSelect(vagas, "Selecione a vaga que deseja ocupar.");
+    for (var i = 0; i < vagas.length; i++) {
+        if (opcao === vagas[i]) {
+            estacionamento.forEach((vaga) => {
+                if (vaga.numero === vagas[i + 1]) {
+                    if (vaga.ocupada === true) {
+                        console.log("Esta vaga já está ocupada. Por favor, selecione outra para ocupar, ou espere até essa vaga ficar liberada.");
+                        console.log("\n");
+                    }
+                    if (vaga.ocupada === false) {
+                        var modelo = leia.question("Digite o modelo do veículo: ");
+                        var placa = leia.question("Digite a placa do veículo: ");
+                        vaga.ocupada = true;
+                        console.log("\n");
+                        console.log("Vaga ocupada com sucesso.");
+                        console.log("\n");
+                    }
+                }
+            })
+        }
+    }
 }
