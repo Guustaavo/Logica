@@ -45,29 +45,28 @@ function mostrarVagas() {
 }
 
 function ocuparVaga() {
-    var vagas = [];
+    var listaVagas = [];
     estacionamento.forEach((vaga) => {
-        vagas.push(vaga.numero);
-    })
-    var opcao = leia.keyInSelect(vagas, "Selecione a vaga que deseja ocupar.");
-    for (var i = 0; i < vagas.length; i++) {
-        if (opcao === vagas[i]) {
-            estacionamento.forEach((vaga) => {
-                if (vaga.numero === vagas[i + 1]) {
-                    if (vaga.ocupada === true) {
-                        console.log("Esta vaga já está ocupada. Por favor, selecione outra para ocupar, ou espere até essa vaga ficar liberada.");
-                        console.log("\n");
-                    }
-                    if (vaga.ocupada === false) {
-                        var modelo = leia.question("Digite o modelo do veículo: ");
-                        var placa = leia.question("Digite a placa do veículo: ");
-                        vaga.ocupada = true;
-                        console.log("\n");
-                        console.log("Vaga ocupada com sucesso.");
-                        console.log("\n");
-                    }
-                }
-            })
-        }
+        listaVagas.push("Vaga " + vaga.numero);
+    });
+
+    var opcao = leia.keyInSelect(listaVagas, "Selecione a vaga que deseja ocupar.");
+
+    if (opcao === -1) return;
+
+    var vagaSelecionada = estacionamento[opcao];
+
+    if (vagaSelecionada.ocupada) {
+        console.log("Esta vaga já está ocupada. Por favor, selecione outra vaga.");
+        console.log("\n");
+    } else {
+        var modelo = leia.question("Digite o modelo do veículo: ");
+        var placa = leia.question("Digite a placa do veículo: ");
+
+        vagaSelecionada.modelo = modelo;
+        vagaSelecionada.placa = placa;
+        vagaSelecionada.ocupada = true;
+
+        console.log("\nVaga ocupada com sucesso!\n");
     }
 }
