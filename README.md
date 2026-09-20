@@ -26,8 +26,8 @@ Aqui estão as ferramentas que utilizei para a realização dos estudos:
 
 1. Certifique-se de ter o **Node.js** instalado.
 2. Clone o repositório:
-```bash
+    ```bash
    git clone [https://github.com/Guustaavo/Logica.git](https://https://github.com/Guustaavo/Logica.git)
 3. Acesse a pasta do exercício desejado e execute:
-```bash
+    ```bash
    node nome-do-arquivo.js
