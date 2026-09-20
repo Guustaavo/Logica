@@ -16,8 +16,6 @@ Acredito que há muitas coisas que possam ser melhoradas, porém tentei organiza
 
 Aqui estão as ferramentas que utilizei para a realização dos estudos:
 
-## 🛠️ Tecnologias Utilizadas
-
 - **Linguagem:** JavaScript
 - **Runtime:** Node.js
 - **Ferramentas:** VS Code, Git e GitHub
@@ -26,8 +24,10 @@ Aqui estão as ferramentas que utilizei para a realização dos estudos:
 
 1. Certifique-se de ter o **Node.js** instalado.
 2. Clone o repositório:
+
     ```bash
    git clone [https://github.com/Guustaavo/Logica.git](https://https://github.com/Guustaavo/Logica.git)
 3. Acesse a pasta do exercício desejado e execute:
+
     ```bash
    node nome-do-arquivo.js
